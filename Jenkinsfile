@@ -11,7 +11,7 @@ pipeline {
         DOCKER_CREDENTIALS_ID = 'docker-hub'
         DOCKER_IMAGE = 'dhanraj/pet-clinic'
         DOCKER_TAG = "build-${env.BUILD_NUMBER}"
-        GIT_REPO = "kaushal1045/DITISS-Project"
+        GIT_REPO = "dhanraj/DITISS-Project"
         DEPLOYMENT_FILE = "deployment/deployment.yml"
     }
 

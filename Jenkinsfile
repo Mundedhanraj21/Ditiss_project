@@ -9,7 +9,7 @@ pipeline {
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
         DOCKER_CREDENTIALS_ID = 'docker-hub'
-        DOCKER_IMAGE = 'kaushal1045/pet-clinic'
+        DOCKER_IMAGE = 'dhanraj/pet-clinic'
         DOCKER_TAG = "build-${env.BUILD_NUMBER}"
         GIT_REPO = "kaushal1045/DITISS-Project"
         DEPLOYMENT_FILE = "deployment/deployment.yml"

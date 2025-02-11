@@ -69,8 +69,8 @@ pipeline {
             steps {
                 withCredentials([string(credentialsId: 'github-token', variable: 'GITHUB_TOKEN')]) {
                     sh '''
-                        git config --global user.email "kaushal.m.suryawanshi@gmail.com"
-                        git config --global user.name "kaushal1045"
+                        git config --global user.email "munde.dhanraj777@gmail.com"
+                        git config --global user.name "dhanraj21"
                         
                         sed -i "s|image: .*|image: ${DOCKER_IMAGE}:${DOCKER_TAG}|" ${DEPLOYMENT_FILE}
 
@@ -85,7 +85,7 @@ pipeline {
 
     post {
         always {
-            mail to: 'kaushal.m.suryawanshi@gmail.com',
+            mail to: 'munde.dhanraj777@gmail.com',
                  subject: "Build ${env.BUILD_NUMBER} - ${currentBuild.result}",
                  body: "Check the build details at ${env.BUILD_URL}"
         }
